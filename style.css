@@ -1,0 +1,87 @@
+/* =====================
+ *  Reset
+ * ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/* =====================
+ *  Custom Properties
+ * ===================== */
+:root {
+
+    /* Colors */
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --dark-grey-red: hsl(0, 6%, 24%);
+    --gradient-one: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    --gradient-two: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+}
+
+
+/* =====================
+ *  Body
+ * ===================== */
+body {
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    margin: 0;
+    height: 100vh;
+ }
+
+
+ /* =====================
+ *  Header
+ * ===================== */
+.logo-container {
+    margin: 1.6rem ;
+}
+
+.logo-container img {
+    height: 20px;
+}
+
+
+/* =====================
+ *  Hero
+ * ===================== */
+ .hero {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+/* =====================
+ *  Message
+ * ===================== */
+.title {
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    text-align: center;
+    color: var(--dark-grey-red);
+    font-weight: 600;
+    margin: 32px 32px 0;
+}
+
+.title span{
+    color: var(--desaturated-red);
+    font-weight: 300;
+}
+
+.subtitle {
+    font-size: .8em;
+    color: var(--desaturated-red);
+    text-align: center;
+    margin: 16px 46px;
+    line-height: 1.5em;
+}
+
+
+/* =====================
+ *  
+ * ===================== */
