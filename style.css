@@ -31,14 +31,21 @@ body {
     background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
     margin: 0;
     height: 100vh;
+    display: grid;
  }
 
 
  /* =====================
  *  Header
  * ===================== */
+ header {
+    display: grid;
+    align-items: center;
+
+ }
+
 .logo-container {
-    margin: 1.6rem ;
+    margin: 0 1.6rem ;
 }
 
 .logo-container img {
@@ -121,3 +128,28 @@ body {
     position: absolute;
     left: 75%;
 }
+
+
+/* =====================
+ *  Footer
+ * ===================== */
+ .attribution {
+    color: var(--desaturated-red);
+    font-size: .5em;
+    text-align: center;
+    padding: 12px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 32px; 
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--desaturated-red);
+}
+
+
+/* =====================
+ *  Desktop
+ * ===================== */
