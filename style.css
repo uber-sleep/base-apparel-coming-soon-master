@@ -8,21 +8,17 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
-
 /* =====================
  *  Custom Properties
  * ===================== */
 :root {
-
     /* Colors */
     --desaturated-red: hsl(0, 36%, 70%);
     --soft-red: hsl(0, 93%, 68%);
     --dark-grey-red: hsl(0, 6%, 24%);
     --gradient-one: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
     --gradient-two: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-
 }
-
 
 /* =====================
  *  Body
@@ -32,39 +28,40 @@ body {
     margin: 0;
     height: 100vh;
     display: grid;
- }
+}
 
-
- /* =====================
+/* =====================
  *  Header
  * ===================== */
  header {
     display: grid;
     align-items: center;
-
- }
+}
 
 .logo-container {
-    margin: 0 1.6rem ;
+    margin: 1rem 1.6rem ;
 }
 
 .logo-container img {
     height: 20px;
 }
 
-
 /* =====================
  *  Hero
  * ===================== */
- .hero {
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
+.hero-container {
+    display: flex;
+    align-items: center;
 }
 
-
+.hero {
+    object-fit: cover;
+    width: 100%;
+    height: 100% auto;
+}
+ 
 /* =====================
- *  Message
+ *  Text
  * ===================== */
 .title {
     text-transform: uppercase;
@@ -88,7 +85,6 @@ body {
     line-height: 1.5em;
 }
 
-
 /* =====================
  *  Input
  * ===================== */
@@ -109,8 +105,7 @@ body {
     border-radius: 22px;
     padding: 12px;
     width: 100%;
-    height: 42px;
-    
+    height: 3rem;    
 }
 
 .input::placeholder {
@@ -120,15 +115,13 @@ body {
 .input-btn {
     border: 1px transparent;
     background: var(--gradient-two);
-    border-radius: 40%;
-    width: 56px;
-    height: 42px;
+    border-radius: 30% / 50%;
+    width: 4rem;
+    height: 3rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-
     position: absolute;
-    left: 75%;
+    left: calc(100% - 5.8rem);
 }
-
 
 /* =====================
  *  Footer
@@ -149,7 +142,91 @@ body {
     color: var(--desaturated-red);
 }
 
-
 /* =====================
  *  Desktop
  * ===================== */
+@media (min-width: 1024px) {
+    /* =====================
+    *  Body
+    * ===================== */
+    body {
+        background-image: url("./images/bg-pattern-desktop.svg");
+        display: grid;
+        grid-template-columns: 60% 40%;  
+        grid-template-rows: 20% 80%; 
+    }
+
+    /* =====================
+    *  Header
+    * ===================== */
+    header, main {
+        grid-column: 1;
+        margin: 0 124px;
+    }
+
+    .logo-container img {
+        height: 32px;
+    }    
+
+    /* =====================
+    *  Hero
+    * ===================== */
+    .hero-container {
+        grid-row: span 2;
+        background-image: url("images/hero-desktop.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .hero {
+        display: none;
+    }
+    
+    /* =====================
+    *  Message
+    * ===================== */
+    .title {    
+        margin: 72px 20px 0;
+        text-align: left;
+        font-size: 4rem;
+    }
+
+    .subtitle {
+        font-size: 1.3em;
+        color: var(--desaturated-red);
+        text-align: left;
+        margin: 32px 20px;
+        line-height: 2em;
+    }
+    
+    /* =====================
+    *  Input
+    * ===================== */
+    .email-input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .email-input form {
+        width: 80%;
+    }
+
+    .input {
+        border-radius: 2rem;
+        height: 4rem;  
+        padding: 12px 30px;
+    }
+
+    .input::placeholder {
+        color: var(--desaturated-red);
+        font-size: 1.3em;
+    }
+
+    .input-btn {
+        border-radius: 30% / 50%;
+        width: 6.5rem;
+        height: 4rem;
+        left: calc(100% - 52rem);
+    }
+}
