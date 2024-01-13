@@ -136,6 +136,20 @@ body {
     font-size: .7em;
 }
 
+.error-icon {
+    display: none;
+}
+
+.error-icon.active{
+    display: block;
+    align-self: center;
+}
+
+.error-icon.active img {
+    margin: 0 0 0 -30px;
+    width: 20px;
+}
+
 /* =====================
  *  Footer
  * ===================== */
@@ -243,6 +257,10 @@ body {
         outline: none;
     }
 
+    /* .error-icon {
+        display: none;
+    } */
+    
     /* =====================
     *  Input Active
     * ===================== */
@@ -263,5 +281,13 @@ body {
 
     .span.inactive {
         display: none;
+    }
+
+    .error-icon.active {
+        align-self: center;
+    }
+
+    .error-icon.active img {
+        margin: 0 0 0 -60px;    
     }
 }
