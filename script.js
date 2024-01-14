@@ -12,7 +12,7 @@ window.onload = function() {
         let span = document.querySelector(".span");
         let inputBtn = document.querySelector(".input-btn");
         // Conditional statement for toggling classes
-        if (input.value === "") {
+        if (input.value === "" || !input.value.includes("@")) {
             input.classList.add("active");
             errorIcon.classList.add("active");
             span.classList.remove("inactive");
