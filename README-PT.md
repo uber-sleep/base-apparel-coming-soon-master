@@ -1,6 +1,3 @@
-Claro, aqui está a tradução para markdown:
-
-```markdown
 # Frontend Mentor - Solução para a Página Em Breve da Base Apparel
 
 ![Solution Screenshot](./design/desktop-preview.jpg)
@@ -65,4 +62,3 @@ Desenvolver a Página Em Breve da Base Apparel aprimorou minhas habilidades de f
 - [LinkedIn](https://www.linkedin.com/in/carolina-goncalves-/)
 - [Github](https://github.com/uber-sleep)
 - [Frontend Mentor](https://www.frontendmentor.io/profile/uber-sleep)
-```
